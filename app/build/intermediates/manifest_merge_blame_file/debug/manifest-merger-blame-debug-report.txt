@@ -1,0 +1,147 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.spotifyclone"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:5:5-67
+11-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+12-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:6:5-77
+12-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:6:22-74
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.android.exoplayer:exoplayer-core:2.11.8] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\465c9ef5a48ef5e514c2f7441374419d\jetified-exoplayer-core-2.11.8\AndroidManifest.xml:24:5-79
+13-->[com.google.android.exoplayer:exoplayer-core:2.11.8] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\465c9ef5a48ef5e514c2f7441374419d\jetified-exoplayer-core-2.11.8\AndroidManifest.xml:24:22-76
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17
+18    <application
+18-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:8:5-28:19
+19        android:name="com.example.spotifyclone.SpotifyApplication"
+19-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:9:9-69
+20        android:allowBackup="true"
+20-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:10:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.3.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6f5b17fc538f0ae0ba3d4dac2432834c\core-1.3.1\AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/spotify_clone"
+23-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:11:9-45
+24        android:label="@string/app_name"
+24-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:12:9-41
+25        android:roundIcon="@mipmap/spotify_clone"
+25-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:13:9-50
+26        android:supportsRtl="true"
+26-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:14:9-35
+27        android:testOnly="true"
+28        android:theme="@style/AppTheme" >
+28-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:15:9-40
+29        <service android:name="com.example.spotifyclone.exoplayer.MusicService" >
+29-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:16:9-20:19
+29-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:16:18-80
+30            <intent-filter>
+30-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:17:13-19:29
+31                <action android:name="android.media.browse.MediaBrowseService" />
+31-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:18:17-81
+31-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:18:25-79
+32            </intent-filter>
+33        </service>
+34
+35        <activity android:name="com.example.spotifyclone.ui.MainActivity" >
+35-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:21:9-27:20
+35-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:21:19-74
+36            <intent-filter>
+36-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:22:13-26:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:23:17-69
+37-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:23:25-66
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:25:17-77
+39-->E:\LOCAL DISK E\Projects\SpotifyCloneYT-Part2-FirebaseSetup\SpotifyCloneYT-Part2-FirebaseSetup\app\src\main\AndroidManifest.xml:25:27-74
+40            </intent-filter>
+41        </activity>
+42
+43        <service
+43-->[com.google.firebase:firebase-storage-ktx:19.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\7b73a15079cbd277f62da3763fcb2d9d\jetified-firebase-storage-ktx-19.2.0\AndroidManifest.xml:12:9-18:19
+44            android:name="com.google.firebase.components.ComponentDiscoveryService"
+44-->[com.google.firebase:firebase-storage-ktx:19.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\7b73a15079cbd277f62da3763fcb2d9d\jetified-firebase-storage-ktx-19.2.0\AndroidManifest.xml:13:13-84
+45            android:directBootAware="true"
+45-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3aab4e0868db72ca18f5b22c929377e2\jetified-firebase-common-19.3.1\AndroidManifest.xml:35:13-43
+46            android:exported="false" >
+46-->[com.google.firebase:firebase-storage-ktx:19.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\7b73a15079cbd277f62da3763fcb2d9d\jetified-firebase-storage-ktx-19.2.0\AndroidManifest.xml:14:13-37
+47            <meta-data
+47-->[com.google.firebase:firebase-storage-ktx:19.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\7b73a15079cbd277f62da3763fcb2d9d\jetified-firebase-storage-ktx-19.2.0\AndroidManifest.xml:15:13-17:85
+48                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
+48-->[com.google.firebase:firebase-storage-ktx:19.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\7b73a15079cbd277f62da3763fcb2d9d\jetified-firebase-storage-ktx-19.2.0\AndroidManifest.xml:16:17-122
+49                android:value="com.google.firebase.components.ComponentRegistrar" />
+49-->[com.google.firebase:firebase-storage-ktx:19.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\7b73a15079cbd277f62da3763fcb2d9d\jetified-firebase-storage-ktx-19.2.0\AndroidManifest.xml:17:17-82
+50            <meta-data
+50-->[com.google.firebase:firebase-common-ktx:19.3.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\b0c995d0bc7bef781815722b127fb351\jetified-firebase-common-ktx-19.3.1\AndroidManifest.xml:15:13-17:85
+51                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+51-->[com.google.firebase:firebase-common-ktx:19.3.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\b0c995d0bc7bef781815722b127fb351\jetified-firebase-common-ktx-19.3.1\AndroidManifest.xml:16:17-113
+52                android:value="com.google.firebase.components.ComponentRegistrar" />
+52-->[com.google.firebase:firebase-common-ktx:19.3.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\b0c995d0bc7bef781815722b127fb351\jetified-firebase-common-ktx-19.3.1\AndroidManifest.xml:17:17-82
+53            <meta-data
+53-->[com.google.firebase:firebase-firestore:21.6.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6ef45ea18da7b11555f9375f5593d229\jetified-firebase-firestore-21.6.0\AndroidManifest.xml:20:13-22:85
+54                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+54-->[com.google.firebase:firebase-firestore:21.6.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6ef45ea18da7b11555f9375f5593d229\jetified-firebase-firestore-21.6.0\AndroidManifest.xml:21:17-111
+55                android:value="com.google.firebase.components.ComponentRegistrar" />
+55-->[com.google.firebase:firebase-firestore:21.6.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\6ef45ea18da7b11555f9375f5593d229\jetified-firebase-firestore-21.6.0\AndroidManifest.xml:22:17-82
+56            <meta-data
+56-->[com.google.firebase:firebase-storage:19.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\84cd94bb1fd4d93d48f2a61d666bf3cb\jetified-firebase-storage-19.2.0\AndroidManifest.xml:33:13-35:85
+57                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+57-->[com.google.firebase:firebase-storage:19.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\84cd94bb1fd4d93d48f2a61d666bf3cb\jetified-firebase-storage-19.2.0\AndroidManifest.xml:34:17-107
+58                android:value="com.google.firebase.components.ComponentRegistrar" />
+58-->[com.google.firebase:firebase-storage:19.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\84cd94bb1fd4d93d48f2a61d666bf3cb\jetified-firebase-storage-19.2.0\AndroidManifest.xml:35:17-82
+59        </service>
+60
+61        <activity
+61-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\42e34ca9652ff022d11f49c11d6188e1\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+62            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+62-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\42e34ca9652ff022d11f49c11d6188e1\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+63            android:exported="false"
+63-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\42e34ca9652ff022d11f49c11d6188e1\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+64            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+64-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\42e34ca9652ff022d11f49c11d6188e1\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+65
+66        <provider
+66-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3aab4e0868db72ca18f5b22c929377e2\jetified-firebase-common-19.3.1\AndroidManifest.xml:26:9-31:39
+67            android:name="com.google.firebase.provider.FirebaseInitProvider"
+67-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3aab4e0868db72ca18f5b22c929377e2\jetified-firebase-common-19.3.1\AndroidManifest.xml:27:13-77
+68            android:authorities="com.example.spotifyclone.firebaseinitprovider"
+68-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3aab4e0868db72ca18f5b22c929377e2\jetified-firebase-common-19.3.1\AndroidManifest.xml:28:13-72
+69            android:directBootAware="true"
+69-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3aab4e0868db72ca18f5b22c929377e2\jetified-firebase-common-19.3.1\AndroidManifest.xml:29:13-43
+70            android:exported="false"
+70-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3aab4e0868db72ca18f5b22c929377e2\jetified-firebase-common-19.3.1\AndroidManifest.xml:30:13-37
+71            android:initOrder="100" />
+71-->[com.google.firebase:firebase-common:19.3.1] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\3aab4e0868db72ca18f5b22c929377e2\jetified-firebase-common-19.3.1\AndroidManifest.xml:31:13-36
+72
+73        <meta-data
+73-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\9edfe40b5e77d002a1a0b075c15bd81c\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+74            android:name="com.google.android.gms.version"
+74-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\9edfe40b5e77d002a1a0b075c15bd81c\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+75            android:value="@integer/google_play_services_version" />
+75-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\9edfe40b5e77d002a1a0b075c15bd81c\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+76
+77        <provider
+77-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\a552d1132e02310f8242e5285eac671d\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+78            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+78-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\a552d1132e02310f8242e5285eac671d\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+79            android:authorities="com.example.spotifyclone.lifecycle-process"
+79-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\a552d1132e02310f8242e5285eac671d\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+80            android:exported="false"
+80-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\a552d1132e02310f8242e5285eac671d\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+81            android:multiprocess="true" />
+81-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Dell\.gradle\caches\transforms-2\files-2.1\a552d1132e02310f8242e5285eac671d\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+82    </application>
+83
+84</manifest>
